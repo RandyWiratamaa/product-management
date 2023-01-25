@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "5da9fce7-962b-4c83-91b3-75d8f8ead805",
+		"name": "PRODUCT MANAGEMENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Show All Product Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "product-management.dev.com/api/product-categories"
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Product Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pakaian",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "Kategori ini meng-handle semua produk elektronik",
+							"type": "default"
+						}
+					]
+				},
+				"url": "product-management.dev.com/api/product-category"
+			},
+			"response": []
+		},
+		{
+			"name": "Show All Product Sub Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "product-management.dev.com/api/product-sub-categories"
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Product Sub Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_category_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "baju pria",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "Sub Kategori untuk meng-handle semua pakaian",
+							"type": "default"
+						}
+					]
+				},
+				"url": "product-management.dev.com/api/product-sub-category"
+			},
+			"response": []
+		},
+		{
+			"name": "Show All Product Varient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "product-management.dev.com/api/product-varients"
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Product Varient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "warna",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "handle varian ukuran",
+							"type": "default"
+						}
+					]
+				},
+				"url": "product-management.dev.com/api/product-varient"
+			},
+			"response": []
+		},
+		{
+			"name": "Show All Product Varient Value",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "product-management.dev.com/api/product-varient-values"
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Product Varient Value",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_varient_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "merah",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "handle warna merah",
+							"type": "default"
+						}
+					]
+				},
+				"url": "product-management.dev.com/api/product-varient-value"
+			},
+			"response": []
+		},
+		{
+			"name": "Show All Price Decision Factor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "product-management.dev.com/api/price-decision-factors"
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Price Decision Factor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "pcs",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "product dijual dalam satuan pcs",
+							"type": "default"
+						}
+					]
+				},
+				"url": "product-management.dev.com/api/price-decision-factor"
+			},
+			"response": []
+		},
+		{
+			"name": "Show All Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "product-management.dev.com/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_sub_category_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "product_varient_value_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "Test Pakaian Pria 001",
+							"type": "default"
+						},
+						{
+							"key": "sku",
+							"value": "123456789987",
+							"type": "default"
+						},
+						{
+							"key": "price_decision_factor_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "ini produk pakaian pria pertama",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "100000",
+							"type": "default"
+						},
+						{
+							"key": "production_date",
+							"value": "2021-10-10",
+							"type": "default"
+						},
+						{
+							"key": "transaction_number",
+							"value": "TR12121212",
+							"type": "default"
+						}
+					]
+				},
+				"url": "product-management.dev.com/api/product"
+			},
+			"response": []
+		}
+	]
+}
